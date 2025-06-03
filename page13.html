@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Java MCQ for job - Page 13</title>
+    <!-- favicon -->
+   <link rel="shortcut icon" href="./assets/favicon.ico">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- CSS -->
+  <link href="./assets/css/styles.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    .pagination li.disabled .page-link {
+      pointer-events: none;
+      cursor: default;
+    }
+    .mcq-card {
+      margin-bottom: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .correct-answer label {
+      font-weight: 600;
+      color: green;
+    }
+    .signature {
+      text-align: center;
+      margin: 2rem 0;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.2rem;
+    }
+    .social-links a {
+      font-size: 1.5rem;
+      color: #444;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Header -->
+  <header class="hero-header text-center animate__animated animate__fadeIn bg-light py-4 mb-4">
+    <div class="container">
+      <h1 class="animate__animated animate__fadeInDown">🚀 Java MCQ Challenge</h1>
+<p class="lead animate__animated animate__fadeInUp animate__delay-1s">
+    Test your Java knowledge with interactive MCQs covering core concepts, data structures, and algorithms!
+</p>
+<div class="mt-3 animate__animated animate__fadeIn animate__delay-2s">
+    <span class="badge bg-primary text-white me-2">Java Basics</span>
+    <span class="badge bg-success text-white me-2">Advanced Concepts</span>
+    <span class="badge bg-warning text-dark">Coding Challenges</span>
+</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <!-- MCQ Question is here -->
+       <!-- ======= MCQ #121 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q121. Which is the correct return type for the processFunction method?
+    <pre><code>_____ processFunction(Integer number, Function&lt;Integer, String&gt; lambda) {
+    return lambda.apply(number);
+}</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q121" id="q121opt1" disabled />
+      <label class="form-check-label" for="q121opt1">Integer</label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q121" id="q121opt2" checked disabled />
+      <label class="form-check-label" for="q121opt2">String</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q121" id="q121opt3" disabled />
+      <label class="form-check-label" for="q121opt3">Consumer</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q121" id="q121opt4" disabled />
+      <label class="form-check-label" for="q121opt4">Function&lt;Integer, String&gt;</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion121">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning121">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseReasoning121"
+          aria-expanded="false"
+          aria-controls="collapseReasoning121"
+        >
+          Show Reasoning
+        </button>
+      </h2>
+      <div
+        id="collapseReasoning121"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingReasoning121"
+        data-bs-parent="#reasoningAccordion121"
+      >
+        <div class="accordion-body">
+          <ul>
+            <li>The method <code>lambda.apply(number)</code> returns a <code>String</code> based on the Function&lt;Integer, String&gt; interface.</li>
+            <li>Therefore, the method return type must be <code>String</code>.</li>
+            <li>The correct method signature would be: <code>String processFunction(Integer number, Function&lt;Integer, String&gt; lambda)</code></li>
+          </ul>
+          <a href="https://github.com/0nyr/java/tree/main/training/linkedin_assessment/which_return_type_0" target="_blank">Reference</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #121 END ======= -->
+
+<!-- ======= MCQ #122 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q122. What function could you use to replace slashes for dashes in a list of dates?
+    <pre><code>List&lt;String&gt; dates = new ArrayList&lt;&gt;();
+// missing code
+dates.replaceAll(replaceSlashes);</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q122" id="q122opt1" checked disabled />
+      <label class="form-check-label" for="q122opt1">UnaryOperator&lt;String&gt; replaceSlashes = date -&gt; date.replace("/", "-");</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q122" id="q122opt2" disabled />
+      <label class="form-check-label" for="q122opt2">Function&lt;String, String&gt; replaceSlashes = dates -&gt; dates.replace("-", "/");</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q122" id="q122opt3" disabled />
+      <label class="form-check-label" for="q122opt3">Map&lt;String, String&gt; replaceSlashes = dates.replace("/", "-");</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q122" id="q122opt4" disabled />
+      <label class="form-check-label" for="q122opt4">Consumer&lt;Date&gt; replaceSlashes = date -&gt; date.replace("/", "-");</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion122">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning122">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseReasoning122"
+          aria-expanded="false"
+          aria-controls="collapseReasoning122"
+        >
+          Show Reasoning
+        </button>
+      </h2>
+      <div
+        id="collapseReasoning122"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingReasoning122"
+        data-bs-parent="#reasoningAccordion122"
+      >
+        <div class="accordion-body">
+          <ul>
+            <li>The <code>replaceAll</code> method on a list takes a <code>UnaryOperator&lt;T&gt;</code> to transform each element in-place.</li>
+            <li><code>UnaryOperator</code> is a specialization of <code>Function&lt;T, T&gt;</code> that returns the same type it receives.</li>
+            <li>Hence, <code>UnaryOperator&lt;String&gt; replaceSlashes = date -&gt; date.replace("/", "-");</code> is correct.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #122 END ======= -->
+
+<!-- ======= MCQ #123 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q123. Which functional interface is most appropriate for a lambda that consumes two values and returns nothing?
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q123" id="q123opt1" disabled />
+      <label class="form-check-label" for="q123opt1">Function&lt;T, R&gt;</label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q123" id="q123opt2" checked disabled />
+      <label class="form-check-label" for="q123opt2">BiConsumer&lt;T, U&gt;</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q123" id="q123opt3" disabled />
+      <label class="form-check-label" for="q123opt3">Supplier&lt;T&gt;</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q123" id="q123opt4" disabled />
+      <label class="form-check-label" for="q123opt4">Predicate&lt;T&gt;</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion123">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning123">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseReasoning123"
+          aria-expanded="false"
+          aria-controls="collapseReasoning123"
+        >
+          Show Reasoning
+        </button>
+      </h2>
+      <div
+        id="collapseReasoning123"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingReasoning123"
+        data-bs-parent="#reasoningAccordion123"
+      >
+        <div class="accordion-body">
+          <ul>
+            <li><code>BiConsumer&lt;T, U&gt;</code> is a functional interface that accepts two input arguments and returns no result.</li>
+            <li>It is used for operations that consume two values (e.g., logging, printing, modifying external state).</li>
+            <li>Other options either return a value or accept only one input.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #123 END ======= -->
+ <!-- ======= MCQ #124 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q124. What is the result of the following code?
+    <pre><code>Stream.of("java", "python", "c")
+  .sorted((a, b) -&gt; b.compareTo(a))
+  .forEach(System.out::print);</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q124" id="q124opt1" disabled />
+      <label class="form-check-label" for="q124opt1">cjavapython</label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q124" id="q124opt2" checked disabled />
+      <label class="form-check-label" for="q124opt2">pythonjavac</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q124" id="q124opt3" disabled />
+      <label class="form-check-label" for="q124opt3">javapythonc</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q124" id="q124opt4" disabled />
+      <label class="form-check-label" for="q124opt4">java</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion124">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning124">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseReasoning124"
+          aria-expanded="false"
+          aria-controls="collapseReasoning124"
+        >
+          Show Reasoning
+        </button>
+      </h2>
+      <div
+        id="collapseReasoning124"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingReasoning124"
+        data-bs-parent="#reasoningAccordion124"
+      >
+        <div class="accordion-body">
+          <ul>
+            <li><code>Stream.of("java", "python", "c")</code> creates a stream of strings.</li>
+            <li><code>sorted((a, b) -&gt; b.compareTo(a))</code> sorts the elements in reverse (descending) order.</li>
+            <li><code>forEach(System.out::print)</code> prints the elements without space.</li>
+            <li>Descending order: "python", "java", "c" → Result: <code>pythonjavac</code></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #124 END ======= -->
+<!-- ======= MCQ #125 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q125. What is the result of this stream operation?
+    <pre><code>Stream.of(3, 1, 4)
+  .map(i -&gt; i * 2)
+  .filter(i -&gt; i &gt; 4)
+  .forEach(System.out::print);</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q125" id="q125opt1" disabled />
+      <label class="form-check-label" for="q125opt1">246</label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q125" id="q125opt2" checked disabled />
+      <label class="form-check-label" for="q125opt2">68</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q125" id="q125opt3" disabled />
+      <label class="form-check-label" for="q125opt3">48</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q125" id="q125opt4" disabled />
+      <label class="form-check-label" for="q125opt4">None</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion125">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning125">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReasoning125" aria-expanded="false" aria-controls="collapseReasoning125">
+          Show Reasoning
+        </button>
+      </h2>
+      <div id="collapseReasoning125" class="accordion-collapse collapse" aria-labelledby="headingReasoning125" data-bs-parent="#reasoningAccordion125">
+        <div class="accordion-body">
+          <ul>
+            <li><code>Stream.of(3, 1, 4)</code> → elements: 3, 1, 4</li>
+            <li><code>.map(i -&gt; i * 2)</code> → becomes: 6, 2, 8</li>
+            <li><code>.filter(i -&gt; i &gt; 4)</code> → filter: 6, 8</li>
+            <li>Output: <code>68</code></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #125 END ======= -->
+
+<!-- ======= MCQ #126 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q126. Which functional interface is used to check a condition and return a boolean?
+  </div>
+  <form>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q126" id="q126opt1" checked disabled />
+      <label class="form-check-label" for="q126opt1">Predicate&lt;T&gt;</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q126" id="q126opt2" disabled />
+      <label class="form-check-label" for="q126opt2">Function&lt;T, R&gt;</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q126" id="q126opt3" disabled />
+      <label class="form-check-label" for="q126opt3">Consumer&lt;T&gt;</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q126" id="q126opt4" disabled />
+      <label class="form-check-label" for="q126opt4">Supplier&lt;T&gt;</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion126">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning126">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReasoning126" aria-expanded="false" aria-controls="collapseReasoning126">
+          Show Reasoning
+        </button>
+      </h2>
+      <div id="collapseReasoning126" class="accordion-collapse collapse" aria-labelledby="headingReasoning126" data-bs-parent="#reasoningAccordion126">
+        <div class="accordion-body">
+          <ul>
+            <li><code>Predicate&lt;T&gt;</code> is used to test a condition and return <code>true</code> or <code>false</code>.</li>
+            <li>Commonly used in <code>filter</code> and <code>if</code> conditions within streams.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #126 END ======= -->
+
+<!-- ======= MCQ #127 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q127. What does the Supplier functional interface do?
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q127" id="q127opt1" disabled />
+      <label class="form-check-label" for="q127opt1">Takes one argument and returns a value</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q127" id="q127opt2" disabled />
+      <label class="form-check-label" for="q127opt2">Consumes two values with no result</label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q127" id="q127opt3" checked disabled />
+      <label class="form-check-label" for="q127opt3">Provides a value without taking input</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q127" id="q127opt4" disabled />
+      <label class="form-check-label" for="q127opt4">Tests a condition and returns boolean</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion127">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning127">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReasoning127" aria-expanded="false" aria-controls="collapseReasoning127">
+          Show Reasoning
+        </button>
+      </h2>
+      <div id="collapseReasoning127" class="accordion-collapse collapse" aria-labelledby="headingReasoning127" data-bs-parent="#reasoningAccordion127">
+        <div class="accordion-body">
+          <ul>
+            <li><code>Supplier&lt;T&gt;</code> is a functional interface that supplies a result of type <code>T</code>.</li>
+            <li>It takes no parameters and is often used for lazy value generation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #127 END ======= -->
+
+<!-- ======= MCQ #128 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q128. What is the output of the following code?
+    <pre><code>List&lt;String&gt; list = Arrays.asList("A", "B", "C");
+list.stream().limit(2).forEach(System.out::print);</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q128" id="q128opt1" checked disabled />
+      <label class="form-check-label" for="q128opt1">AB</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q128" id="q128opt2" disabled />
+      <label class="form-check-label" for="q128opt2">ABC</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q128" id="q128opt3" disabled />
+      <label class="form-check-label" for="q128opt3">A</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q128" id="q128opt4" disabled />
+      <label class="form-check-label" for="q128opt4">BC</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion128">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning128">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReasoning128" aria-expanded="false" aria-controls="collapseReasoning128">
+          Show Reasoning
+        </button>
+      </h2>
+      <div id="collapseReasoning128" class="accordion-collapse collapse" aria-labelledby="headingReasoning128" data-bs-parent="#reasoningAccordion128">
+        <div class="accordion-body">
+          <ul>
+            <li><code>limit(2)</code> limits the stream to first 2 elements: A, B</li>
+            <li><code>forEach</code> prints them → Output: <code>AB</code></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #128 END ======= -->
+
+<!-- ======= MCQ #129 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q129. Which method is used to transform stream elements?
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q129" id="q129opt1" disabled />
+      <label class="form-check-label" for="q129opt1">filter()</label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q129" id="q129opt2" checked disabled />
+      <label class="form-check-label" for="q129opt2">map()</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q129" id="q129opt3" disabled />
+      <label class="form-check-label" for="q129opt3">forEach()</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q129" id="q129opt4" disabled />
+      <label class="form-check-label" for="q129opt4">collect()</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion129">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning129">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReasoning129" aria-expanded="false" aria-controls="collapseReasoning129">
+          Show Reasoning
+        </button>
+      </h2>
+      <div id="collapseReasoning129" class="accordion-collapse collapse" aria-labelledby="headingReasoning129" data-bs-parent="#reasoningAccordion129">
+        <div class="accordion-body">
+          <ul>
+            <li><code>map()</code> is used to transform each element of a stream.</li>
+            <li>Other methods serve different purposes: <code>filter</code> for conditional filtering, <code>forEach</code> for processing, and <code>collect</code> for aggregation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #129 END ======= -->
+
+<!-- ======= MCQ #130 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q130. What does <code>Optional.ofNullable(value)</code> do?
+  </div>
+  <form>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q130" id="q130opt1" checked disabled />
+      <label class="form-check-label" for="q130opt1">Returns an empty Optional if value is null</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q130" id="q130opt2" disabled />
+      <label class="form-check-label" for="q130opt2">Always throws NullPointerException if value is null</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q130" id="q130opt3" disabled />
+      <label class="form-check-label" for="q130opt3">Always returns non-empty Optional</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q130" id="q130opt4" disabled />
+      <label class="form-check-label" for="q130opt4">Returns Optional with default value</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion130">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning130">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReasoning130" aria-expanded="false" aria-controls="collapseReasoning130">
+          Show Reasoning
+        </button>
+      </h2>
+      <div id="collapseReasoning130" class="accordion-collapse collapse" aria-labelledby="headingReasoning130" data-bs-parent="#reasoningAccordion130">
+        <div class="accordion-body">
+          <ul>
+            <li><code>Optional.ofNullable(value)</code> creates an <code>Optional</code> that may or may not contain a non-null value.</li>
+            <li>If <code>value</code> is <code>null</code>, returns <code>Optional.empty()</code>.</li>
+            <li>It avoids <code>NullPointerException</code>.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #130 END ======= --> 
+    </div>
+
+    <!-- Pagination Section -->
+    <nav aria-label="Page navigation" class="my-4">
+      <ul id="pagination" class="pagination justify-content-center"></ul>
+    </nav>
+
+   <div class="row">
+      <!-- Signature Section -->
+      <div class="signature animate__animated animate__fadeInUp">
+        <p>Created with ❤️ by <strong>Saikat Kumar Gain</strong></p>
+        <div class="social-links">
+          <a href="https://github.com/SKgain" class="text-decoration-none me-2"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/saikat-kumar-gain-b059422b0/" class="text-decoration-none me-2"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+
+  <script>
+    // Total number of pages
+    const totalPages = 17;
+    // Current page number
+    let currentPage = 13;
+
+    // Create individual page number item
+    function createPageItem(page) {
+      const li = document.createElement("li");
+      li.classList.add("page-item");
+      if (page === currentPage) {
+        li.classList.add("active");
+        li.setAttribute("aria-current", "page");
+      }
+      const a = document.createElement("a");
+      a.classList.add("page-link");
+      a.href = `page${page}.html`;
+      a.textContent = page;
+      li.appendChild(a);
+      return li;
+    }
+
+    // Create ellipsis item for pagination
+    function createEllipsisItem() {
+      const li = document.createElement("li");
+      li.classList.add("page-item", "disabled");
+      const span = document.createElement("span");
+      span.classList.add("page-link");
+      span.textContent = "...";
+      li.appendChild(span);
+      return li;
+    }
+
+    // Create Previous / Next button items with links
+    function createPrevNextItem(type) {
+      const li = document.createElement("li");
+      li.classList.add("page-item");
+
+      if (
+        (type === "prev" && currentPage === 1) ||
+        (type === "next" && currentPage === totalPages)
+      ) {
+        li.classList.add("disabled");
+      }
+
+      const a = document.createElement("a");
+      a.classList.add("page-link");
+
+      if (type === "prev") {
+        a.href = `page${currentPage - 1}.html`;
+        a.textContent = "Previous";
+      } else {
+        a.href = `page${currentPage + 1}.html`;
+        a.textContent = "Next";
+      }
+      li.appendChild(a);
+      return li;
+    }
+
+    // Render pagination based on current page
+    function renderPagination() {
+      const pagination = document.getElementById("pagination");
+      pagination.innerHTML = "";
+
+      // Previous button
+      pagination.appendChild(createPrevNextItem("prev"));
+
+      if (totalPages <= 7) {
+        for (let i = 1; i <= totalPages; i++) {
+          pagination.appendChild(createPageItem(i));
+        }
+      } else {
+        // Show first page always
+        pagination.appendChild(createPageItem(1));
+
+        if (currentPage > 4) {
+          pagination.appendChild(createEllipsisItem());
+        }
+
+        let start = Math.max(2, currentPage - 2);
+        let end = Math.min(totalPages - 1, currentPage + 2);
+
+        if (currentPage <= 4) {
+          start = 2;
+          end = 5;
+        } else if (currentPage >= totalPages - 3) {
+          start = totalPages - 4;
+          end = totalPages - 1;
+        }
+
+        for (let i = start; i <= end; i++) {
+          pagination.appendChild(createPageItem(i));
+        }
+
+        if (currentPage < totalPages - 3) {
+          pagination.appendChild(createEllipsisItem());
+        }
+
+        // Show last page always
+        pagination.appendChild(createPageItem(totalPages));
+      }
+
+      // Next button
+      pagination.appendChild(createPrevNextItem("next"));
+    }
+
+    // Initial render
+    renderPagination();
+  </script>
+</body>
+</html>

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Java MCQ Challenge - Test Your Knowledge | Page 11</title>
+    <!-- favicon -->
+   <link rel="shortcut icon" href="./assets/favicon.ico">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- CSS -->
+  <link href="./assets/css/styles.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    .pagination li.disabled .page-link {
+      pointer-events: none;
+      cursor: default;
+    }
+    .mcq-card {
+      margin-bottom: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .correct-answer label {
+      font-weight: 600;
+      color: green;
+    }
+    .signature {
+      text-align: center;
+      margin: 2rem 0;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.2rem;
+    }
+    .social-links a {
+      font-size: 1.5rem;
+      color: #444;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Header -->
+   <header class="hero-header text-center animate__animated animate__fadeIn bg-light py-4 mb-4">
+    <div class="container">
+      <h1 class="animate__animated animate__fadeInDown">🚀 Java MCQ Challenge</h1>
+<p class="lead animate__animated animate__fadeInUp animate__delay-1s">
+    Test your Java knowledge with interactive MCQs covering core concepts, data structures, and algorithms!
+</p>
+<div class="mt-3 animate__animated animate__fadeIn animate__delay-2s">
+    <span class="badge bg-primary text-white me-2">Java Basics</span>
+    <span class="badge bg-success text-white me-2">Advanced Concepts</span>
+    <span class="badge bg-warning text-dark">Coding Challenges</span>
+</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <!-- MCQ Question is here -->
+      <!-- ======= MCQ #101 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q101. Which statement about constructors is not true?
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q101" id="q101opt1" disabled />
+      <label class="form-check-label" for="q101opt1">A class can have multiple constructors with a different parameter list.</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q101" id="q101opt2" disabled />
+      <label class="form-check-label" for="q101opt2">You can call another constructor with <code>this</code> or <code>super</code>.</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q101" id="q101opt3" disabled />
+      <label class="form-check-label" for="q101opt3">A constructor does not define a return value.</label>
+    </div>
+    <div class="mb-4 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q101" id="q101opt4" checked disabled />
+      <label class="form-check-label" for="q101opt4">Every class must explicitly define a constructor without parameters.</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion101">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning101">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReasoning101" aria-expanded="false" aria-controls="collapseReasoning101">
+          Show Reasoning
+        </button>
+      </h2>
+      <div id="collapseReasoning101" class="accordion-collapse collapse" aria-labelledby="headingReasoning101" data-bs-parent="#reasoningAccordion101">
+        <div class="accordion-body">
+          <ul>
+            <li>A class can have multiple constructors with different parameters (constructor overloading).</li>
+            <li>Constructors can call other constructors using <code>this()</code> or the superclass constructor with <code>super()</code>.</li>
+            <li>Constructors do not have return types, not even <code>void</code>.</li>
+            <li>If no constructor is defined, Java provides a default no-argument constructor automatically.</li>
+            <li>Therefore, it is not true that every class must explicitly define a no-argument constructor.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #101 END ======= -->
+
+<!-- ======= MCQ #102 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q102. What language feature allows types to be parameters on classes, interfaces, and methods in order to reuse the same code for different data types?
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q102" id="q102opt1" disabled />
+      <label class="form-check-label" for="q102opt1">Regular Expressions</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q102" id="q102opt2" disabled />
+      <label class="form-check-label" for="q102opt2">Reflection</label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q102" id="q102opt3" checked disabled />
+      <label class="form-check-label" for="q102opt3">Generics</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q102" id="q102opt4" disabled />
+      <label class="form-check-label" for="q102opt4">Concurrency</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion102">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning102">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReasoning102" aria-expanded="false" aria-controls="collapseReasoning102">
+          Show Reasoning
+        </button>
+      </h2>
+      <div id="collapseReasoning102" class="accordion-collapse collapse" aria-labelledby="headingReasoning102" data-bs-parent="#reasoningAccordion102">
+        <div class="accordion-body">
+          <ul>
+            <li>Generics allow classes, interfaces, and methods to operate on types specified as parameters, improving code reuse and type safety.</li>
+            <li>Regular Expressions and Reflection are unrelated to parameterizing types.</li>
+            <li>Concurrency relates to multithreading, not type parameters.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #102 END ======= -->
+
+<!-- ======= MCQ #103 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q103. What will be printed?
+    <pre><code>public class Berries{
+
+    String berry = "blue";
+
+    public static void main(String[] args) {
+        new Berries().juicy("straw");
+    }
+    void juicy(String berry){
+        this.berry = "rasp";
+        System.out.println(berry + "berry");
+    }
+}</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q103" id="q103opt1" disabled />
+      <label class="form-check-label" for="q103opt1">raspberry</label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q103" id="q103opt2" checked disabled />
+      <label class="form-check-label" for="q103opt2">strawberry</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q103" id="q103opt3" disabled />
+      <label class="form-check-label" for="q103opt3">blueberry</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q103" id="q103opt4" disabled />
+      <label class="form-check-label" for="q103opt4">rasp</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion103">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning103">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReasoning103" aria-expanded="false" aria-controls="collapseReasoning103">
+          Show Reasoning
+        </button>
+      </h2>
+      <div id="collapseReasoning103" class="accordion-collapse collapse" aria-labelledby="headingReasoning103" data-bs-parent="#reasoningAccordion103">
+        <div class="accordion-body">
+          <ul>
+            <li>The method parameter <code>berry</code> shadows the instance variable <code>berry</code>.</li>
+            <li><code>this.berry = "rasp";</code> updates the instance variable to "rasp".</li>
+            <li>But <code>System.out.println(berry + "berry");</code> prints the method parameter "straw" concatenated with "berry".</li>
+            <li>Thus, output is <strong>strawberry</strong>.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #103 END ======= -->
+
+<!-- ======= MCQ #104 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q104. What is the value of <code>forestCount</code> after this code executes?
+    <pre><code>Map&lt;String, Integer&gt; forestSpecies = new HashMap<>();
+
+forestSpecies.put("Amazon", 30000);
+forestSpecies.put("Congo", 10000);
+forestSpecies.put("Daintree", 15000);
+forestSpecies.put("Amazon", 40000);
+
+int forestCount = forestSpecies.size();</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q104" id="q104opt1" checked disabled />
+      <label class="form-check-label" for="q104opt1">3</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q104" id="q104opt2" disabled />
+      <label class="form-check-label" for="q104opt2">4</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q104" id="q104opt3" disabled />
+      <label class="form-check-label" for="q104opt3">2</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q104" id="q104opt4" disabled />
+      <label class="form-check-label" for="q104opt4">When calling the put method, Java will throw an exception</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion104">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning104">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReasoning104" aria-expanded="false" aria-controls="collapseReasoning104">
+          Show Reasoning
+        </button>
+      </h2>
+      <div id="collapseReasoning104" class="accordion-collapse collapse" aria-labelledby="headingReasoning104" data-bs-parent="#reasoningAccordion104">
+        <div class="accordion-body">
+          <ul>
+            <li>HashMap keys are unique.</li>
+            <li>Adding <code>forestSpecies.put("Amazon", 40000);</code> replaces the previous "Amazon" entry (30000).</li>
+            <li>So, the final map has 3 entries: "Amazon", "Congo", "Daintree".</li>
+            <li>Therefore, <code>forestCount = 3</code>.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #104 END ======= -->
+
+<!-- ======= MCQ #105 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q105. What is the problem with this code?
+    <pre><code>import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+class Main {
+
+    public static void main(String[] args) {
+        List&lt;String&gt; list = new ArrayList&lt;&gt;(Arrays.asList("a", "b", "c"));
+        for(String value : list) {
+            if(value.equals("a")) {
+                list.remove(value);
+            }
+        }
+        System.out.println(list); // outputs [b,c]
+    }
+}</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q105" id="q105opt1" disabled />
+      <label class="form-check-label" for="q105opt1">String should be compared using == method instead of equals.</label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q105" id="q105opt2" checked disabled />
+      <label class="form-check-label" for="q105opt2">Modifying a collection while iterating through it can throw a ConcurrentModificationException.</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q105" id="q105opt3" disabled />
+      <label class="form-check-label" for="q105opt3">The List interface does not allow an argument of type String to be passed to the remove method.</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q105" id="q105opt4" disabled />
+      <label class="form-check-label" for="q105opt4">ArrayList does not implement the List interface.</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion105">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning105">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReasoning105" aria-expanded="false" aria-controls="collapseReasoning105">
+          Show Reasoning
+        </button>
+      </h2>
+      <div id="collapseReasoning105" class="accordion-collapse collapse" aria-labelledby="headingReasoning105" data-bs-parent="#reasoningAccordion105">
+        <div class="accordion-body">
+          <ul>
+            <li>Removing items from a collection while iterating over it using a for-each loop causes a ConcurrentModificationException.</li>
+            <li>String comparison using <code>equals()</code> is correct here.</li>
+            <li>ArrayList implements List, so that is not an issue.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #105 END ======= -->
+
+<!-- ======= MCQ #106 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q106. How do you convert this method into a lambda expression?
+    <pre><code>public int square(int x) {
+    return x * x;
+}</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q106" id="q106opt1" disabled />
+      <label class="form-check-label" for="q106opt1">Function&lt;Integer, Integer&gt; squareLambda = (int x) -&gt; { x * x };</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q106" id="q106opt2" disabled />
+      <label class="form-check-label" for="q106opt2">Function&lt;Integer, Integer&gt; squareLambda = () -&gt; { return x * x };</label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q106" id="q106opt3" checked disabled />
+      <label class="form-check-label" for="q106opt3">Function&lt;Integer, Integer&gt; squareLambda = x -&gt; x * x;</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q106" id="q106opt4" disabled />
+      <label class="form-check-label" for="q106opt4">Function&lt;Integer, Integer&gt; squareLambda = x -&gt; return x * x;</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion106">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning106">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReasoning106" aria-expanded="false" aria-controls="collapseReasoning106">
+          Show Reasoning
+        </button>
+      </h2>
+      <div id="collapseReasoning106" class="accordion-collapse collapse" aria-labelledby="headingReasoning106" data-bs-parent="#reasoningAccordion106">
+        <div class="accordion-body">
+          <ul>
+            <li>Lambda expressions use the syntax: <code>(parameters) -&gt; expression</code>.</li>
+            <li>If the lambda body is a single expression, braces and return statement can be omitted.</li>
+            <li>The correct lambda matching the method is <code>x -&gt; x * x</code>.</li>
+            <li>The other options either have syntax errors or missing parameters.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #106 END ======= -->
+
+<!-- ======= MCQ #107 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q107. Which choice is a valid implementation of this interface?
+    <pre><code>interface MyInterface {
+    int foo(int x);
+}</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q107" id="q107opt1" disabled />
+      <label class="form-check-label" for="q107opt1">A
+<pre><code>public class MyClass implements MyInterface {
+    // ....
+    public void foo(int x){
+        System.out.println(x);
+    }
+}</code></pre></label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q107" id="q107opt2" disabled />
+      <label class="form-check-label" for="q107opt2">B
+<pre><code>public class MyClass implements MyInterface {
+    // ....
+    public double foo(int x){
+        return x * 100;
+    }
+}</code></pre></label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q107" id="q107opt3" checked disabled />
+      <label class="form-check-label" for="q107opt3">C
+<pre><code>public class MyClass implements MyInterface {
+    // ....
+    public int foo(int x){
+        return x * 100;
+    }
+}</code></pre></label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q107" id="q107opt4" disabled />
+      <label class="form-check-label" for="q107opt4">D
+<pre><code>public class MyClass implements MyInterface {
+    // ....
+    public int foo(){
+        return 100;
+    }
+}</code></pre></label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion107">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning107">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReasoning107" aria-expanded="false" aria-controls="collapseReasoning107">
+          Show Reasoning
+        </button>
+      </h2>
+      <div id="collapseReasoning107" class="accordion-collapse collapse" aria-labelledby="headingReasoning107" data-bs-parent="#reasoningAccordion107">
+        <div class="accordion-body">
+          <ul>
+            <li>The method in the implementation must exactly match the interface method signature.</li>
+            <li>Options A, B, and D have mismatched signatures.</li>
+            <li>Only option C correctly implements the method.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #107 END ======= -->
+
+<!-- ======= MCQ #108 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q108. What is the result of this program?
+    <pre><code>interface Foo {
+    int x = 10;
+}
+
+public class Main{
+
+    public static void main(String[] args) {
+        Foo.x = 20;
+        System.out.println(Foo.x);
+    }
+}</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q108" id="q108opt1" disabled />
+      <label class="form-check-label" for="q108opt1">10</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q108" id="q108opt2" disabled />
+      <label class="form-check-label" for="q108opt2">20</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q108" id="q108opt3" disabled />
+      <label class="form-check-label" for="q108opt3">null</label>
+    </div>
+    <div class="mb-4 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q108" id="q108opt4" checked disabled />
+      <label class="form-check-label" for="q108opt4">An error will occur when compiling.</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion108">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning108">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReasoning108" aria-expanded="false" aria-controls="collapseReasoning108">
+          Show Reasoning
+        </button>
+      </h2>
+      <div id="collapseReasoning108" class="accordion-collapse collapse" aria-labelledby="headingReasoning108" data-bs-parent="#reasoningAccordion108">
+        <div class="accordion-body">
+          <ul>
+            <li>Interface variables are implicitly <code>public static final</code>.</li>
+            <li>You cannot assign a new value to a final variable after it is initialized.</li>
+            <li>Therefore, <code>Foo.x = 20;</code> causes a compile-time error.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #108 END ======= -->
+
+<!-- ======= MCQ #109 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q109. Which statement must be inserted on line 1 to print the value true?
+    <pre><code>1:
+2: Optional&lt;String&gt; opt = Optional.of(val);
+3: System.out.println(opt.isPresent());</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q109" id="q109opt1" checked disabled />
+      <label class="form-check-label" for="q109opt1">String val = "Sam";</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q109" id="q109opt2" disabled />
+      <label class="form-check-label" for="q109opt2">Integer val = 15;</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q109" id="q109opt3" disabled />
+      <label class="form-check-label" for="q109opt3">String val = null;</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q109" id="q109opt4" disabled />
+      <label class="form-check-label" for="q109opt4">Optional&lt;String&gt; val = Optional.empty();</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion109">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning109">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReasoning109" aria-expanded="false" aria-controls="collapseReasoning109">
+          Show Reasoning
+        </button>
+      </h2>
+      <div id="collapseReasoning109" class="accordion-collapse collapse" aria-labelledby="headingReasoning109" data-bs-parent="#reasoningAccordion109">
+        <div class="accordion-body">
+          <ul>
+            <li><code>Optional.of(val)</code> throws NullPointerException if <code>val</code> is null.</li>
+            <li>To print <code>true</code> with <code>isPresent()</code>, <code>val</code> must be a non-null String.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #109 END ======= -->
+
+<!-- ======= MCQ #110 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q110. What will this code print, assuming it is inside the main method of a class?
+    <pre><code>System.out.println(true &amp;&amp; false || true);
+System.out.println(false || false &amp;&amp; true);</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q110" id="q110opt1" disabled />
+      <label class="form-check-label" for="q110opt1">false , true</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q110" id="q110opt2" disabled />
+      <label class="form-check-label" for="q110opt2">true ,true</label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q110" id="q110opt3" checked disabled />
+      <label class="form-check-label" for="q110opt3">true , false</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q110" id="q110opt4" disabled />
+      <label class="form-check-label" for="q110opt4">false , false</label>
+    </div>
+  </form>
+  <div class="accordion" id="reasoningAccordion110">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header" id="headingReasoning110">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReasoning110" aria-expanded="false" aria-controls="collapseReasoning110">
+          Show Reasoning
+        </button>
+      </h2>
+      <div id="collapseReasoning110" class="accordion-collapse collapse" aria-labelledby="headingReasoning110" data-bs-parent="#reasoningAccordion110">
+        <div class="accordion-body">
+          <ul>
+            <li>Logical AND (<code>&&</code>) has higher precedence than logical OR (<code>||</code>).</li>
+            <li>First line: <code>true && false || true</code> evaluates as <code>(true && false) || true</code> → <code>false || true</code> → <code>true</code>.</li>
+            <li>Second line: <code>false || false && true</code> evaluates as <code>false || (false && true)</code> → <code>false || false</code> → <code>false</code>.</li>
+            <li>Therefore, the output is:</li>
+            <li><code>true</code> and then <code>false</code>.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #110 END ======= -->
+
+    </div>
+
+    <!-- Pagination Section -->
+    <nav aria-label="Page navigation" class="my-4">
+      <ul id="pagination" class="pagination justify-content-center"></ul>
+    </nav>
+
+   <div class="row">
+      <!-- Signature Section -->
+      <div class="signature animate__animated animate__fadeInUp">
+        <p>Created with ❤️ by <strong>Saikat Kumar Gain</strong></p>
+        <div class="social-links">
+          <a href="https://github.com/SKgain" class="text-decoration-none me-2"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/saikat-kumar-gain-b059422b0/" class="text-decoration-none me-2"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+
+  <script>
+    // Total number of pages
+    const totalPages = 17;
+    // Current page number
+    let currentPage = 11;
+
+    // Create individual page number item
+    function createPageItem(page) {
+      const li = document.createElement("li");
+      li.classList.add("page-item");
+      if (page === currentPage) {
+        li.classList.add("active");
+        li.setAttribute("aria-current", "page");
+      }
+      const a = document.createElement("a");
+      a.classList.add("page-link");
+      a.href = `page${page}.html`;
+      a.textContent = page;
+      li.appendChild(a);
+      return li;
+    }
+
+    // Create ellipsis item for pagination
+    function createEllipsisItem() {
+      const li = document.createElement("li");
+      li.classList.add("page-item", "disabled");
+      const span = document.createElement("span");
+      span.classList.add("page-link");
+      span.textContent = "...";
+      li.appendChild(span);
+      return li;
+    }
+
+    // Create Previous / Next button items with links
+    function createPrevNextItem(type) {
+      const li = document.createElement("li");
+      li.classList.add("page-item");
+
+      if (
+        (type === "prev" && currentPage === 1) ||
+        (type === "next" && currentPage === totalPages)
+      ) {
+        li.classList.add("disabled");
+      }
+
+      const a = document.createElement("a");
+      a.classList.add("page-link");
+
+      if (type === "prev") {
+        a.href = `page${currentPage - 1}.html`;
+        a.textContent = "Previous";
+      } else {
+        a.href = `page${currentPage + 1}.html`;
+        a.textContent = "Next";
+      }
+      li.appendChild(a);
+      return li;
+    }
+
+    // Render pagination based on current page
+    function renderPagination() {
+      const pagination = document.getElementById("pagination");
+      pagination.innerHTML = "";
+
+      // Previous button
+      pagination.appendChild(createPrevNextItem("prev"));
+
+      if (totalPages <= 7) {
+        for (let i = 1; i <= totalPages; i++) {
+          pagination.appendChild(createPageItem(i));
+        }
+      } else {
+        // Show first page always
+        pagination.appendChild(createPageItem(1));
+
+        if (currentPage > 4) {
+          pagination.appendChild(createEllipsisItem());
+        }
+
+        let start = Math.max(2, currentPage - 2);
+        let end = Math.min(totalPages - 1, currentPage + 2);
+
+        if (currentPage <= 4) {
+          start = 2;
+          end = 5;
+        } else if (currentPage >= totalPages - 3) {
+          start = totalPages - 4;
+          end = totalPages - 1;
+        }
+
+        for (let i = start; i <= end; i++) {
+          pagination.appendChild(createPageItem(i));
+        }
+
+        if (currentPage < totalPages - 3) {
+          pagination.appendChild(createEllipsisItem());
+        }
+
+        // Show last page always
+        pagination.appendChild(createPageItem(totalPages));
+      }
+
+      // Next button
+      pagination.appendChild(createPrevNextItem("next"));
+    }
+
+    // Initial render
+    renderPagination();
+  </script>
+</body>
+</html>

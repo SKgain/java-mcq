@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Java MCQ Challenge - Test Your Knowledge | Page 2</title>
+    <!-- favicon -->
+   <link rel="shortcut icon" href="./assets/favicon.ico">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- CSS -->
+  <link href="./assets/css/styles.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    .pagination li.disabled .page-link {
+      pointer-events: none;
+      cursor: default;
+    }
+    .mcq-card {
+      margin-bottom: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .correct-answer label {
+      font-weight: 600;
+      color: green;
+    }
+    .signature {
+      text-align: center;
+      margin: 2rem 0;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.2rem;
+    }
+    .social-links a {
+      font-size: 1.5rem;
+      color: #444;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Header -->
+  <header class="hero-header text-center animate__animated animate__fadeIn bg-light py-4 mb-4">
+    <div class="container">
+      <h1 class="animate__animated animate__fadeInDown">🚀 Java MCQ Challenge</h1>
+<p class="lead animate__animated animate__fadeInUp animate__delay-1s">
+    Test your Java knowledge with interactive MCQs covering core concepts, data structures, and algorithms!
+</p>
+<div class="mt-3 animate__animated animate__fadeIn animate__delay-2s">
+    <span class="badge bg-primary text-white me-2">Java Basics</span>
+    <span class="badge bg-success text-white me-2">Advanced Concepts</span>
+    <span class="badge bg-warning text-dark">Coding Challenges</span>
+</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <!-- MCQ Question is here -->
+      <!-- ======= MCQ #11 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q11. What is the result of this code?
+    <pre><code>class MainClass {
+    final String message() {
+        return "Hello!";
+    }
+}
+
+class Main extends MainClass {
+    public static void main(String[] args) {
+        System.out.println(message());
+    }
+
+     String message() {
+         return "World!";
+     }
+ }</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q11" id="q11opt1" checked disabled />
+      <label class="form-check-label" for="q11opt1">It will not compile because of line 10.</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q11" id="q11opt2" disabled />
+      <label class="form-check-label" for="q11opt2">"Hello!"</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q11" id="q11opt3" disabled />
+      <label class="form-check-label" for="q11opt3">It will not compile because of line 2.</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q11" id="q11opt4" disabled />
+      <label class="form-check-label" for="q11opt4">"World!"</label>
+    </div>
+  </form>
+  <div class="accordion mb-3" id="accordionQ11">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingQ11">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQ11" aria-expanded="false" aria-controls="collapseQ11">
+          Explanation
+        </button>
+      </h2>
+      <div id="collapseQ11" class="accordion-collapse collapse" aria-labelledby="headingQ11" data-bs-parent="#accordionQ11">
+        <div class="accordion-body">
+          Compilation error at line 10 because final methods cannot be overridden, and here <code>message()</code> is a final method. Also, note that the non-static method <code>message()</code> cannot be referenced from a static context in the <code>main</code> method.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #11 END ======= -->
+
+<!-- ======= MCQ #12 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q12. Given this code, which command will output "2"?
+    <pre><code>class Main {
+    public static void main(String[] args) {
+        System.out.println(args[2]);
+    }
+}</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q12" id="q12opt1" disabled />
+      <label class="form-check-label" for="q12opt1">java Main 1 2 "3 4" 5</label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q12" id="q12opt2" checked disabled />
+      <label class="form-check-label" for="q12opt2">java Main 1 "2" "2" 5</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q12" id="q12opt3" disabled />
+      <label class="form-check-label" for="q12opt3">java Main.class 1 "2" 2 5</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q12" id="q12opt4" disabled />
+      <label class="form-check-label" for="q12opt4">java Main 1 "2" "3 4" 5</label>
+    </div>
+  </form>
+</div>
+<!-- ======= MCQ #12 END ======= -->
+
+<!-- ======= MCQ #13 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q13. What is the output of this code?
+    <pre><code>class Main {
+    public static void main(String[] args){
+        int a = 123451234512345;
+        System.out.println(a);
+    }
+}</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q13" id="q13opt1" disabled />
+      <label class="form-check-label" for="q13opt1">"123451234512345"</label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q13" id="q13opt2" checked disabled />
+      <label class="form-check-label" for="q13opt2">Nothing - this will not compile.</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q13" id="q13opt3" disabled />
+      <label class="form-check-label" for="q13opt3">a negative integer value</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q13" id="q13opt4" disabled />
+      <label class="form-check-label" for="q13opt4">"12345100000"</label>
+    </div>
+  </form>
+  <div class="accordion mb-3" id="accordionQ13">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingQ13">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQ13" aria-expanded="false" aria-controls="collapseQ13">
+          Reasoning
+        </button>
+      </h2>
+      <div id="collapseQ13" class="accordion-collapse collapse" aria-labelledby="headingQ13" data-bs-parent="#accordionQ13">
+        <div class="accordion-body">
+          The <code>int</code> type in Java can represent whole numbers from -2,147,483,648 to 2,147,483,647. The value <code>123451234512345</code> exceeds this range, so the code will not compile.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #13 END ======= -->
+
+<!-- ======= MCQ #14 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q14. What is the output of this code?
+    <pre><code>class Main {
+    public static void main (String[] args) {
+        String message = "Hello world!";
+        String newMessage = message.substring(6, 12)
+            + message.substring(12, 6);
+        System.out.println(newMessage);
+    }
+}</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q14" id="q14opt1" disabled />
+      <label class="form-check-label" for="q14opt1">The code does not compile.</label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q14" id="q14opt2" checked disabled />
+      <label class="form-check-label" for="q14opt2">A runtime exception is thrown.</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q14" id="q14opt3" disabled />
+      <label class="form-check-label" for="q14opt3">"world!!world"</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q14" id="q14opt4" disabled />
+      <label class="form-check-label" for="q14opt4">"world!world!"</label>
+    </div>
+  </form>
+</div>
+<!-- ======= MCQ #14 END ======= -->
+
+<!-- ======= MCQ #15 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q15. How do you write a for-each loop that will iterate over ArrayList&lt;Pencil&gt; pencilCase?
+  </div>
+  <form>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q15" id="q15opt1" checked disabled />
+      <label class="form-check-label" for="q15opt1">for (Pencil pencil : pencilCase) {}</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q15" id="q15opt2" disabled />
+      <label class="form-check-label" for="q15opt2">for (pencilCase.next()) {}</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q15" id="q15opt3" disabled />
+      <label class="form-check-label" for="q15opt3">for (Pencil pencil : pencilCase.iterator()) {}</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q15" id="q15opt4" disabled />
+      <label class="form-check-label" for="q15opt4">for (pencil in pencilCase) {}</label>
+    </div>
+  </form>
+</div>
+<!-- ======= MCQ #15 END ======= -->
+
+<!-- ======= MCQ #16 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q16. What does this code print?
+    <pre><code>System.out.print("apple".compareTo("banana"));</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q16" id="q16opt1" disabled />
+      <label class="form-check-label" for="q16opt1">0</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q16" id="q16opt2" disabled />
+      <label class="form-check-label" for="q16opt2">positive number</label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q16" id="q16opt3" checked disabled />
+      <label class="form-check-label" for="q16opt3">negative number</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q16" id="q16opt4" disabled />
+      <label class="form-check-label" for="q16opt4">compilation error</label>
+    </div>
+  </form>
+</div>
+<!-- ======= MCQ #16 END ======= -->
+
+<!-- ======= MCQ #17 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q17. You have an ArrayList of names that you want to sort alphabetically. Which approach would <strong>NOT</strong> work?
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q17" id="q17opt1" disabled />
+      <label class="form-check-label" for="q17opt1">names.sort(Comparator.comparing(String::toString))</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q17" id="q17opt2" disabled />
+      <label class="form-check-label" for="q17opt2">Collections.sort(names)</label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q17" id="q17opt3" checked disabled />
+      <label class="form-check-label" for="q17opt3">names.sort(List.DESCENDING)</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q17" id="q17opt4" disabled />
+      <label class="form-check-label" for="q17opt4">names.stream().sorted((s1, s2) =&gt; s1.compareTo(s2)).collect(Collectors.toList())</label>
+    </div>
+  </form>
+  <div class="accordion mb-3" id="accordionQ17">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingQ17">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQ17" aria-expanded="false" aria-controls="collapseQ17">
+          Reference
+        </button>
+      </h2>
+      <div id="collapseQ17" class="accordion-collapse collapse" aria-labelledby="headingQ17" data-bs-parent="#accordionQ17">
+        <div class="accordion-body">
+          <a href="https://www.scaler.com/topics/java/arraylist-in-java/" target="_blank" rel="noopener noreferrer">ArrayList in Java - Scaler Topics</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= MCQ #17 END ======= -->
+
+<!-- ======= MCQ #18 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q18. By implementing encapsulation, you cannot directly access the class's _ properties unless you are writing code inside the class itself.
+  </div>
+  <form>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q18" id="q18opt1" checked disabled />
+      <label class="form-check-label" for="q18opt1">private</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q18" id="q18opt2" disabled />
+      <label class="form-check-label" for="q18opt2">protected</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q18" id="q18opt3" disabled />
+      <label class="form-check-label" for="q18opt3">no-modifier</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q18" id="q18opt4" disabled />
+      <label class="form-check-label" for="q18opt4">public</label>
+    </div>
+  </form>
+</div>
+<!-- ======= MCQ #18 END ======= -->
+
+<!-- ======= MCQ #19 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q19. Which is the most up-to-date way to instantiate the current date?
+  </div>
+  <form>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q19" id="q19opt1" disabled />
+      <label class="form-check-label" for="q19opt1">new SimpleDateFormat("yyyy-MM-dd").format(new Date())</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q19" id="q19opt2" disabled />
+      <label class="form-check-label" for="q19opt2">new Date(System.currentTimeMillis())</label>
+    </div>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q19" id="q19opt3" checked disabled />
+      <label class="form-check-label" for="q19opt3">LocalDate.now()</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q19" id="q19opt4" disabled />
+      <label class="form-check-label" for="q19opt4">Date.now()</label>
+    </div>
+  </form>
+</div>
+<!-- ======= MCQ #19 END ======= -->
+
+<!-- ======= MCQ #20 START ======= -->
+<div class="mcq-card p-4">
+  <div class="mcq-question mb-4">
+    Q20. What is the output of this code?
+    <pre><code>String str1 = "Java";
+String str2 = "Java";
+System.out.println(str1 == str2);</code></pre>
+  </div>
+  <form>
+    <div class="mb-3 form-check correct-answer">
+      <input class="form-check-input" type="radio" name="q20" id="q20opt1" checked disabled />
+      <label class="form-check-label" for="q20opt1">true</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q20" id="q20opt2" disabled />
+      <label class="form-check-label" for="q20opt2">false</label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="q20" id="q20opt3" disabled />
+      <label class="form-check-label" for="q20opt3">compile error</label>
+    </div>
+    <div class="mb-4 form-check">
+      <input class="form-check-input" type="radio" name="q20" id="q20opt4" disabled />
+      <label class="form-check-label" for="q20opt4">Runtime error</label>
+    </div>
+  </form>
+</div>
+<!-- ======= MCQ #20 END ======= -->
+
+    </div>
+
+    <!-- Pagination Section -->
+    <nav aria-label="Page navigation" class="my-4">
+      <ul id="pagination" class="pagination justify-content-center"></ul>
+    </nav>
+
+   <div class="row">
+      <!-- Signature Section -->
+      <div class="signature animate__animated animate__fadeInUp">
+        <p>Created with ❤️ by <strong>Saikat Kumar Gain</strong></p>
+        <div class="social-links">
+          <a href="https://github.com/SKgain" class="text-decoration-none me-2"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/saikat-kumar-gain-b059422b0/" class="text-decoration-none me-2"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+
+  <script>
+    // Total number of pages
+    const totalPages = 17;
+    // Current page number
+    let currentPage = 2;
+
+    // Create individual page number item
+    function createPageItem(page) {
+      const li = document.createElement("li");
+      li.classList.add("page-item");
+      if (page === currentPage) {
+        li.classList.add("active");
+        li.setAttribute("aria-current", "page");
+      }
+      const a = document.createElement("a");
+      a.classList.add("page-link");
+      // Link to the correct page HTML file
+      a.href = `page${page}.html`;
+      a.textContent = page;
+      li.appendChild(a);
+      return li;
+    }
+
+    // Create ellipsis item for pagination
+    function createEllipsisItem() {
+      const li = document.createElement("li");
+      li.classList.add("page-item", "disabled");
+      const span = document.createElement("span");
+      span.classList.add("page-link");
+      span.textContent = "...";
+      li.appendChild(span);
+      return li;
+    }
+
+    // Create Previous / Next button items with links
+    function createPrevNextItem(type) {
+      const li = document.createElement("li");
+      li.classList.add("page-item");
+
+      if (
+        (type === "prev" && currentPage === 1) ||
+        (type === "next" && currentPage === totalPages)
+      ) {
+        li.classList.add("disabled");
+      }
+
+      const a = document.createElement("a");
+      a.classList.add("page-link");
+
+      if (type === "prev") {
+        a.href = `page${currentPage - 1}.html`;
+        a.textContent = "Previous";
+      } else {
+        a.href = `page${currentPage + 1}.html`;
+        a.textContent = "Next";
+      }
+      li.appendChild(a);
+      return li;
+    }
+
+    // Render pagination based on current page
+    function renderPagination() {
+      const pagination = document.getElementById("pagination");
+      pagination.innerHTML = "";
+
+      // Previous button
+      pagination.appendChild(createPrevNextItem("prev"));
+
+      // If total pages <=7, show all pages
+      if (totalPages <= 7) {
+        for (let i = 1; i <= totalPages; i++) {
+          pagination.appendChild(createPageItem(i));
+        }
+      } else {
+        // Show first page always
+        pagination.appendChild(createPageItem(1));
+
+        if (currentPage > 4) {
+          pagination.appendChild(createEllipsisItem());
+        }
+
+        let start = Math.max(2, currentPage - 2);
+        let end = Math.min(totalPages - 1, currentPage + 2);
+
+        if (currentPage <= 4) {
+          start = 2;
+          end = 5;
+        } else if (currentPage >= totalPages - 3) {
+          start = totalPages - 4;
+          end = totalPages - 1;
+        }
+
+        for (let i = start; i <= end; i++) {
+          pagination.appendChild(createPageItem(i));
+        }
+
+        if (currentPage < totalPages - 3) {
+          pagination.appendChild(createEllipsisItem());
+        }
+
+        // Show last page always
+        pagination.appendChild(createPageItem(totalPages));
+      }
+
+      // Next button
+      pagination.appendChild(createPrevNextItem("next"));
+    }
+
+    // Initial render
+    renderPagination();
+  </script>
+</body>
+</html>
